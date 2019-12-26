@@ -5,7 +5,7 @@ Java application that will simulate the lottery that occurs in NYCC and SDCC eve
 * Lottery_Items - Contains data about each type of prize available.
 * Persons_Data - Contains data about each lottery participant.
 
-After the data has been loaded, the lottery is simulated and the results are written in separate files generated for each prize in the results folder.
+After the data has been loaded, the lottery is simulated and the results are written in separate files generated for each prize in the results folder. Data of participants who did not win any prizes are also recorded in the Lottery_Losses file located in the results folder.
 
 # Version Notes:
 
