@@ -1,5 +1,6 @@
+package comicConLotterySimulator.object;
 
-public class PersonData {
+public class Person {
 	private int identifier;
 	private String firstName;
 	private String lastName;
@@ -8,7 +9,7 @@ public class PersonData {
 	private int choiceWonIdentifier;
 	private int choiceWonPreference;
 	
-	public PersonData(String identifier, String firstName, String lastName, String email) {
+	public Person(String identifier, String firstName, String lastName, String email) {
 		this.identifier = Integer.parseInt(identifier);
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -36,9 +37,9 @@ public class PersonData {
 				+ "\n	Choice Won Preference: " + choiceWonPreference);
 	}
 	
-	@Override
 	public String toString() {
 		String s = Integer.toString(identifier) + "," + firstName + "," + lastName + "," + email;
 		return s;
 	}
+	
 }

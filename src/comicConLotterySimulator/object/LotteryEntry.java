@@ -1,11 +1,12 @@
+package comicConLotterySimulator.object;
 
-public class LotteryEntryData {
+public class LotteryEntry {
 	private int personIdentifier;
 	private int firstChoice;
 	private int secondChoice;
 	private int thirdChoice;
 	
-	public LotteryEntryData(String personIdentifier, String firstChoice, String secondChoice, String thirdChoice) {
+	public LotteryEntry(String personIdentifier, String firstChoice, String secondChoice, String thirdChoice) {
 		this.personIdentifier = Integer.parseInt(personIdentifier);
 		this.firstChoice = Integer.parseInt(firstChoice);
 		this.secondChoice = Integer.parseInt(secondChoice);
@@ -24,12 +25,11 @@ public class LotteryEntryData {
 		return thirdChoice;
 	}
 
-	public void printString() {
-		System.out.println("Lottery Entry Data for Identifier: " + personIdentifier 
+	public String toString() {
+		return "Lottery Entry Data for Identifier: " + personIdentifier 
 				+ "\n	First Choice: " + firstChoice 
 				+ "\n	Second Choice: "+ secondChoice
-				+ "\n	Third Choice: " + thirdChoice);
+				+ "\n	Third Choice: " + thirdChoice;
 	}
 	
-
 }

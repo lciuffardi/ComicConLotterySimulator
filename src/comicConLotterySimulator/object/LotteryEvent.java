@@ -1,11 +1,12 @@
+package comicConLotterySimulator.object;
 
-public class LotteryEvents {
+public class LotteryEvent {
 	private int identifier;
 	private String name;
 	private int maxSpaces;
 	private int spacesLeft;
 	
-	public LotteryEvents(String identifier, String name, String maxSpaces) {
+	public LotteryEvent(String identifier, String name, String maxSpaces) {
 		this.identifier = Integer.parseInt(identifier);
 		this.name = name;
 		this.maxSpaces = Integer.parseInt(maxSpaces);
@@ -28,11 +29,11 @@ public class LotteryEvents {
 		this.spacesLeft = spacesLeft;
 	}
 
-	public void printString() {
-		System.out.println("Event Data for Identifier: " + identifier 
+	public String toString() {
+		return "Event Data for Identifier: " + identifier 
 				+ "\n	Name: " + name 
 				+ "\n	Max Spaces: "+ maxSpaces
-				+ "\n	Spaces Left: " + spacesLeft);
+				+ "\n	Spaces Left: " + spacesLeft;
 	}
 	
 }
