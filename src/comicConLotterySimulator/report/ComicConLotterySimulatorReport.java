@@ -35,7 +35,7 @@ public class ComicConLotterySimulatorReport {
 	
 	private static void saveFileData(String fileName, int eventIdentifier, Map<Integer, LotteryEntry> lotteryEntryMap, Map<Integer, Person> personMap) throws IOException {
 		File directory = new File(FilePath.LOTTERY_RESULTS_PATH.getFilePath());
-		File file = new File(FilePath.LOTTERY_RESULTS_PATH + fileName);
+		File file = new File(directory.getAbsoluteFile() + "\\" + fileName);
 		
 		if(!directory.exists())
 			directory.mkdir();
